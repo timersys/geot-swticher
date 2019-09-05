@@ -25,7 +25,7 @@ class GeotSwitcher {
 
 		// required files and assets
 		$this->includes();
-		$this->assets();
+		add_action( 'wp_enqueue_scripts', [ $this, 'assets' ] );
 
 		//register widget
 		add_action( 'widgets_init', [ $this, 'register_widget' ] );
