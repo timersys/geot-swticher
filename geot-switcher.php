@@ -43,7 +43,7 @@ class GeotSwitcher {
 	/**
 	 * Enqueue assets
 	 */
-	private function assets() {
+	public function assets() {
 		wp_enqueue_script( 'geot-switcher', plugin_dir_url( __FILE__ ) . 'switcher.js', [ 'jquery', 'geot-js' ], '1.0', true );
 	}
 
